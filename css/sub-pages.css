@@ -1,0 +1,37 @@
+
+@media (max-width:768px){
+
+.split-left ul{
+font-size:20px !important;
+}
+
+.split-left h2{
+font-size:30px !important;
+}
+
+/* make split sections stack */
+
+.split-section{
+flex-direction:column;
+}
+
+.split-left,
+.split-right{
+width:100%;
+padding:30px 20px;
+}
+
+/* images fit screen */
+
+.white img{
+width:100%;
+height:auto;
+}
+
+/* improve spacing */
+
+.split-left ul li{
+margin-bottom:12px;
+}
+
+}
