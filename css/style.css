@@ -1,0 +1,320 @@
+/* GENERAL */
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:whitesmoke;
+color:black;
+}
+
+
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(135deg,darkviolet,cyan);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:80px;
+}
+
+.hero h2{
+font-size:35px;
+}
+
+.hero p{
+font-size:28px;
+margin:20px 0;
+}
+
+.hero button{
+padding:12px 30px;
+border:none;
+background:white;
+color:black;
+font-weight:600;
+border-radius:30px;
+cursor:pointer;
+}
+
+
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:50px;
+padding:100px 40px;
+}
+
+.card{
+background:white;
+padding:50px;
+width:300px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.card h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:22px;
+}
+
+
+
+/* SPLIT SECTIONS */
+
+.split-section{
+display:flex;
+min-height:700px;
+}
+
+.split-left,
+.split-right{
+width:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:60px;
+}
+
+.colored{
+background: darkviolet;
+color:white;
+}
+
+.white{
+background:white;
+}
+
+.white img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+
+
+/* COURSES */
+
+.courses{
+text-align:center;
+padding:120px 40px;
+}
+
+.course-grid{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:60px;
+}
+
+.course-card{
+background:white;
+padding:50px;
+width:300px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.course-card h3{
+font-size:24px;
+}
+
+.course-card p{
+font-size:16px;
+}
+
+.course-card button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:darkviolet;
+color:white;
+border-radius:25px;
+cursor:pointer;
+}
+
+
+
+/* ABOUT */
+
+.about{
+padding:80px 20px;
+background:white;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+max-width:1000px;
+margin:auto;
+}
+
+.about img{
+width:300px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about-text{
+max-width:500px;
+}
+
+
+
+/* CTA */
+
+.cta{
+background:darkviolet;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:white;
+color:black;
+border-radius:30px;
+cursor:pointer;
+}
+
+
+
+/* FOOTER */
+
+footer{
+background: black;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+}
+footer a:hover{
+color:yellow;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+/* HERO */
+
+.hero{
+height:auto;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+
+/* FEATURES */
+
+.features{
+flex-direction:column;
+align-items:center;
+padding:60px 20px;
+}
+
+.card{
+width:90%;
+}
+
+
+/* SPLIT SECTIONS */
+
+.split-section{
+flex-direction:column;
+gap:20px;
+}
+
+.split-left,
+.split-right{
+width:100%;
+padding:40px 20px;
+}
+.split-left ul{
+font-size:20px;
+}
+
+.split-left h2{
+font-size:30px;
+}
+
+/* COURSE CARDS */
+
+.course-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.course-card{
+width:90%;
+}
+
+
+/* ABOUT SECTION */
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about img{
+width:200px;
+}
+
+}
+
+/* improve list spacing */
+.split-left ul li{
+margin-bottom:12px;
+}
+
+/* images responsive */
+.white img{
+width:100%;
+height:auto;
+}
+
+/* general paragraph size on mobile */
+p{
+font-size:18px;
+}
