@@ -140,6 +140,7 @@ body {
 
     .back-link {
         font-size: 14px;
+        align-self: flex-start;
     }
 
     .page-title {
@@ -169,6 +170,6 @@ body {
     
     .banner-img {
         width: 100%; 
-        max-width: 250px; 
+        max-width: 400px; 
     }
 }
