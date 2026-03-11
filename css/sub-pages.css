@@ -17,6 +17,7 @@ body {
     background-color: darkviolet; 
     color: white;
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
@@ -29,6 +30,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     transition: opacity 0.3s;
+    flex: 0 0 auto;
 }
 
 .back-link:hover {
@@ -39,12 +41,13 @@ body {
     margin: 0;
     font-size: 30px;
     text-align: center;
-    flex: 1; 
+    flex: 1; /* Keeps title centered */
 }
 
 .nav-buttons {
     display: flex;
     gap: 15px;
+    flex: 0 0 auto;
 }
 
 .nav-btn {
@@ -65,7 +68,7 @@ body {
 /* SUB-PAGE CONTENT */
 .sub-content {
     padding: 60px 20px;
-    max-width: 1000px; 
+    max-width: 1000px;
     margin: auto;
     text-align: center;
 }
@@ -81,7 +84,6 @@ body {
     text-align: center;
 }
 
-
 .banner-img {
     width: 80%; 
     max-width: 850px; 
@@ -89,29 +91,39 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* SUB-PAGE FOOTER */
+/* SUB-PAGE FOOTER (Contact Column) */
 .sub-footer {
     background-color: black;
     color: white;
-    text-align: center;
     padding: 50px 20px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.sub-footer a {
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.contact-column a {
     color: cornsilk;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.sub-footer a:hover {
+.contact-column a:hover {
     color: cyan;
 }
 
 .footer-title {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 
@@ -123,29 +135,40 @@ body {
 
     
     .sub-nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 15px;
+        padding: 15px 15px;
+    }
+
+    .back-link {
+        font-size: 14px;
     }
 
     .page-title {
-        font-size: 26px;
+        font-size: 20px;
     }
 
+    
     .nav-buttons {
         width: 100%;
         justify-content: center;
+        margin-top: 15px; 
+        gap: 10px;
+    }
+
+    .nav-btn {
+        padding: 6px 15px;
+        font-size: 14px;
     }
 
     
     .description-text {
         font-size: 18px; 
         margin-bottom: 35px;
-        text-align: left; 
+        text-align: center; 
     }
 
     
     .banner-img {
-        width: 65%; 
+        width: 100%; 
+        max-width: 250px; 
     }
 }
