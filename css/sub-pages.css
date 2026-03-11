@@ -1,37 +1,147 @@
-
-@media (max-width:768px){
-
-.split-left ul{
-font-size:20px !important;
+/* GLOBAL RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-.split-left h2{
-font-size:30px !important;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: whitesmoke;
+    color: black;
 }
 
-/* make split sections stack */
-
-.split-section{
-flex-direction:column;
+/* SUB-PAGE NAVIGATION */
+.sub-nav {
+    width: 100%;
+    min-height: 60px;
+    background-color: darkviolet; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-.split-left,
-.split-right{
-width:100%;
-padding:30px 20px;
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* images fit screen */
-
-.white img{
-width:100%;
-height:auto;
+.page-title {
+    margin: 0;
+    font-size: 28px;
 }
 
-/* improve spacing */
-
-.split-left ul li{
-margin-bottom:12px;
+.nav-buttons {
+    display: flex;
+    gap: 15px;
 }
 
+.nav-btn {
+    color: darkviolet;
+    background-color: white;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* SUB-PAGE CONTENT */
+.sub-content {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 25px; 
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.banner-container {
+    text-align: center;
+}
+
+.banner-img {
+    width: 50%; 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* SUB-PAGE FOOTER */
+.sub-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sub-footer a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.sub-footer a:hover {
+    color: cyan;
+}
+
+.footer-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ------------------------- */
+/* MOBILE RESPONSIVE         */
+/* ------------------------- */
+
+@media (max-width: 768px) {
+
+    
+    .sub-nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    .description-text {
+        font-size: 18px; 
+    }
+
+    
+    .banner-img {
+        width: 90%; 
+    }
+
+    
+    .split-section {
+        flex-direction: column;
+    }
+    .split-left, .split-right {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .split-left ul {
+        font-size: 20px !important;
+    }
+    .split-left h2 {
+        font-size: 30px !important;
+    }
+    .split-left ul li {
+        margin-bottom: 12px;
+    }
+    .white img {
+        width: 100%;
+        height: auto;
+    }
 }
