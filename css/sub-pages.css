@@ -144,7 +144,10 @@ body {
     }
 
     .page-title {
-        font-size: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
     }
 
     
@@ -171,5 +174,18 @@ body {
     .banner-img {
         width: 100%; 
         max-width: 500px; 
+    }
+
+    .sub-footer {
+        display: block; 
+        width: 100%;
+        background-color: black;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .contact-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
     }
 }
